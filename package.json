@@ -8,7 +8,7 @@
   ],
   "author": "egs33",
   "version": "0.1.0",
-  "main": "base.js",
+  "main": "nodejs.js",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
@@ -18,15 +18,17 @@
     "url": "https://github.com/egs33/eslint-config"
   },
   "peerDependencies": {
-    "eslint": ">=7.2.0"
-  },
-  "dependencies": {
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
+    "eslint": "^7.2.0",
     "eslint-plugin-vue": "^6.2.2",
     "vue-eslint-parser": "^7.1.0"
   },
+  "dependencies": {
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  },
   "devDependencies": {
-    "eslint": "^7.2.0"
+    "eslint": "^7.2.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-eslint-parser": "^7.1.0"
   }
 }
