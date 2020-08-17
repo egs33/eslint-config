@@ -31,7 +31,7 @@ module.exports = {
 
 ### for browser and Vue.js SFC
 ```bash
-$ yarn add -D vue-eslint-parser
+$ yarn add -D vue-eslint-parser eslint-plugin-vue
 ```
 
 ```javascript
