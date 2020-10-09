@@ -1,27 +1,8 @@
 {
   "name": "@egs33/eslint-config",
   "description": "eslint config for me",
-  "homepage": "https://github.com/egs33/eslint-config",
-  "keywords": [
-    "eslint",
-    "eslint-config"
-  ],
-  "author": "egs33",
   "version": "0.1.3",
-  "main": "nodejs.js",
-  "license": "MIT",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/egs33/eslint-config"
-  },
-  "peerDependencies": {
-    "eslint": "^7.2.0",
-    "eslint-plugin-vue": "^7.0.1",
-    "vue-eslint-parser": "^7.1.0"
-  },
+  "author": "egs33",
   "dependencies": {
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0"
@@ -30,6 +11,31 @@
     "eslint": "^7.2.0",
     "eslint-plugin-vue": "^7.0.1",
     "vue-eslint-parser": "^7.1.0"
+  },
+  "files": [
+    "base.js",
+    "browser.js",
+    "nodejs.js",
+    "vue.js"
+  ],
+  "homepage": "https://github.com/egs33/eslint-config",
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "license": "MIT",
+  "main": "nodejs.js",
+  "peerDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-plugin-vue": "^7.0.1",
+    "vue-eslint-parser": "^7.1.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/egs33/eslint-config"
   },
   "scripts": {
     "lint": "eslint . -c base.js",
