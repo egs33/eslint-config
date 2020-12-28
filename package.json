@@ -1,7 +1,7 @@
 {
   "name": "@egs33/eslint-config",
   "description": "eslint config for me",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "author": "egs33",
   "dependencies": {
     "eslint-config-airbnb-base": "^14.2.0",
