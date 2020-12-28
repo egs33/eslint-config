@@ -1,10 +1,10 @@
 module.exports = {
   extends: 'airbnb-base',
   parserOptions: {
-    ecmaVersion: 2019,
+    ecmaVersion: 2020,
   },
   env: {
-    es2017: true,
+    es2020: true,
   },
   rules: {
     'no-plusplus': 0,
