@@ -30,9 +30,6 @@
     "eslint-plugin-vue": "^7.0.1",
     "vue-eslint-parser": "^7.1.0"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/egs33/eslint-config"
