@@ -30,6 +30,14 @@
     "eslint-plugin-vue": "^7.0.1",
     "vue-eslint-parser": "^7.1.0"
   },
+  "peerDependenciesMeta": {
+    "eslint-plugin-vue": {
+      "optional": true
+    },
+    "vue-eslint-parser": {
+      "optional": true
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/egs33/eslint-config"
