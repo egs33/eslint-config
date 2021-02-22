@@ -1,7 +1,15 @@
 module.exports = {
   extends: ['./browser', 'plugin:vue/recommended'],
   plugins: ['vue'],
-  // parser: 'vue-eslint-parser',
+  parser: 'vue-eslint-parser',
+  overrides: [
+    {
+      files: '**.vue',
+      rules: {
+        'import/no-default-export': 'off',
+      },
+    },
+  ],
   rules: {
     'vue/max-attributes-per-line': ['error', {
       singleline: 4,

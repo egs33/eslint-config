@@ -7,9 +7,11 @@ module.exports = {
     es2020: true,
   },
   rules: {
-    'no-plusplus': 0,
-    'no-continue': 0,
+    'no-plusplus': 'off',
+    'no-continue': 'off',
     'func-style': ['error', 'expression'],
     'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
+    'import/prefer-default-export': 'off',
+    'import/no-default-export': 'error',
   },
 };
