@@ -41,3 +41,10 @@ module.exports = {
   parser: 'vue-eslint-parser',
 };
 ```
+### for node.js (typescript)
+```javascript
+module.exports = {
+  root: true,
+  extends: '@egs33/eslint-config/typescript-node',
+};
+```

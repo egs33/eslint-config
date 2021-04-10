@@ -4,7 +4,9 @@
   "version": "1.1.0",
   "author": "egs33",
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
     "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0"
   },
@@ -17,7 +19,9 @@
     "base.js",
     "browser.js",
     "nodejs.js",
-    "vue.js"
+    "vue.js",
+    "typescript-base.js",
+    "typescript-node.js"
   ],
   "homepage": "https://github.com/egs33/eslint-config",
   "keywords": [
@@ -29,6 +33,7 @@
   "peerDependencies": {
     "eslint": "^7.2.0",
     "eslint-plugin-vue": "^7.0.1",
+    "typescript": "^4.2.4",
     "vue-eslint-parser": "^7.1.0"
   },
   "peerDependenciesMeta": {
@@ -36,6 +41,9 @@
       "optional": true
     },
     "vue-eslint-parser": {
+      "optional": true
+    },
+    "typescript": {
       "optional": true
     }
   },
