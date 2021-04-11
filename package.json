@@ -15,6 +15,9 @@
     "eslint-plugin-vue": "^7.0.1",
     "vue-eslint-parser": "^7.1.0"
   },
+  "engines": {
+    "node": ">=12"
+  },
   "files": [
     "base.js",
     "browser.js",
