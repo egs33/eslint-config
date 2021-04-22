@@ -42,6 +42,10 @@ module.exports = {
 };
 ```
 ### for node.js (typescript)
+```bash
+$ yarn add -D @typescript-eslint/eslint-plugin
+```
+
 ```javascript
 module.exports = {
   root: true,
