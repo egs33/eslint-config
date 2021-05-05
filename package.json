@@ -23,7 +23,8 @@
     "nodejs.js",
     "vue.js",
     "typescript-base.js",
-    "typescript-node.js"
+    "typescript-node.js",
+    "typescript-browser.js"
   ],
   "homepage": "https://github.com/egs33/eslint-config",
   "keywords": [
