@@ -1,3 +1,5 @@
+const promiseRules = require('./plugin-rules/promise');
+
 module.exports = {
   extends: 'airbnb-base',
   parserOptions: {
@@ -6,6 +8,7 @@ module.exports = {
   env: {
     es2020: true,
   },
+  plugins: ['promise'],
   rules: {
     'no-plusplus': 'off',
     'no-continue': 'off',
@@ -16,5 +19,6 @@ module.exports = {
     'max-lines': ['error', { max: 500, skipComments: true }],
     // https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/style.js#L6
     'array-bracket-newline': 'error',
+    ...promiseRules,
   },
 };

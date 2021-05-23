@@ -7,7 +7,8 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-node": "^11.1.0"
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0"
   },
   "devDependencies": {
     "eslint": "^7.24.0",
@@ -24,7 +25,8 @@
     "vue.js",
     "typescript-base.js",
     "typescript-node.js",
-    "typescript-browser.js"
+    "typescript-browser.js",
+    "plugin-rules"
   ],
   "homepage": "https://github.com/egs33/eslint-config",
   "keywords": [
