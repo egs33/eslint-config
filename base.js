@@ -1,14 +1,18 @@
 const promiseRules = require('./plugin-rules/promise');
 
 module.exports = {
-  extends: ['airbnb-base', 'plugin:array-func/all'],
+  extends: [
+    'airbnb-base',
+    'plugin:array-func/all',
+    'plugin:regexp/recommended',
+  ],
   parserOptions: {
     ecmaVersion: 2021,
   },
   env: {
     es2020: true,
   },
-  plugins: ['promise', 'array-func'],
+  plugins: ['promise', 'array-func', 'regexp'],
   rules: {
     'no-plusplus': 'off',
     'no-continue': 'off',
