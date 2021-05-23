@@ -1,14 +1,14 @@
 const promiseRules = require('./plugin-rules/promise');
 
 module.exports = {
-  extends: 'airbnb-base',
+  extends: ['airbnb-base', 'plugin:array-func/all'],
   parserOptions: {
     ecmaVersion: 2021,
   },
   env: {
     es2020: true,
   },
-  plugins: ['promise'],
+  plugins: ['promise', 'array-func'],
   rules: {
     'no-plusplus': 'off',
     'no-continue': 'off',
@@ -20,5 +20,6 @@ module.exports = {
     // https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/style.js#L6
     'array-bracket-newline': 'error',
     ...promiseRules,
+    'array-func/prefer-array-from': 'off',
   },
 };
