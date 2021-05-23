@@ -13,5 +13,6 @@ module.exports = {
     'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
     'import/prefer-default-export': 'off',
     'import/no-default-export': 'error',
+    'max-lines': ['error', { max: 500, skipComments: true }],
   },
 };
