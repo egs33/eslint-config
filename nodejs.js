@@ -3,6 +3,9 @@ module.exports = {
     './base',
     'plugin:node/recommended',
   ],
+  parserOptions: {
+    ecmaVersion: 2021,
+  },
   env: {
     node: true,
   },
