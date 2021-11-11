@@ -4,18 +4,18 @@
   "version": "1.7.0",
   "author": "egs33",
   "dependencies": {
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^15.0.0",
     "eslint-plugin-array-func": "^3.1.7",
-    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-promise": "^5.1.1",
     "eslint-plugin-regexp": "^0.10.0"
   },
   "devDependencies": {
-    "eslint": "^8.0.1",
-    "eslint-plugin-vue": "^7.19.1",
-    "vue-eslint-parser": "^7.11.0"
+    "eslint": "^8.2.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "vue-eslint-parser": "^7.11.0 || ^8.0.1"
   },
   "engines": {
     "node": ">=12"
@@ -39,10 +39,10 @@
   "main": "nodejs.js",
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "eslint": "^8.0.1",
-    "eslint-plugin-vue": "^7.19.1",
+    "eslint": "^8.2.0",
+    "eslint-plugin-vue": "^8.0.3",
     "typescript": "^4.4.4",
-    "vue-eslint-parser": "^7.11.0"
+    "vue-eslint-parser": "^7.11.0 || ^8.0.1"
   },
   "peerDependenciesMeta": {
     "@typescript-eslint/eslint-plugin": {
