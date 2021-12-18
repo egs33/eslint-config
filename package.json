@@ -1,7 +1,7 @@
 {
   "name": "@egs33/eslint-config",
   "description": "eslint config for me",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "author": "egs33",
   "dependencies": {
     "eslint-config-airbnb-base": "^15.0.0",
@@ -9,7 +9,7 @@
     "eslint-plugin-array-func": "^3.1.7",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-regexp": "^1.5.1"
   },
   "devDependencies": {
