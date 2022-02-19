@@ -37,7 +37,7 @@ $ yarn add -D vue-eslint-parser eslint-plugin-vue
 ```javascript
 module.exports = {
   root: true,
-  extends: '@egs33/eslint-config/vue',
+  extends: '@egs33/eslint-config/vue3',
   parser: 'vue-eslint-parser',
 };
 ```
