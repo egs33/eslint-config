@@ -25,6 +25,7 @@
     "browser.js",
     "nodejs.js",
     "vue.js",
+    "vue3.js",
     "typescript-base.js",
     "typescript-node.js",
     "typescript-browser.js",
