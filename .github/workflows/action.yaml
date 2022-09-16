@@ -2,9 +2,9 @@ name: ci
 on: [push]
 jobs:
   lint-and-build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
     container:
-      image: node:12-alpine
+      image: node:16-alpine
       env:
         NODE_ENV: development
     steps:
