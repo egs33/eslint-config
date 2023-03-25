@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     './base',
-    'plugin:node/recommended',
+    'plugin:n/recommended',
   ],
   parserOptions: {
     ecmaVersion: 2021,
@@ -10,6 +10,6 @@ module.exports = {
     node: true,
   },
   rules: {
-    'node/no-path-concat': 'error',
+    'n/no-path-concat': 'error',
   },
 };
