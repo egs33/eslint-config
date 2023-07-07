@@ -27,6 +27,7 @@
     "node": ">=16"
   },
   "files": [
+    "util.js",
     "base.js",
     "browser.js",
     "nodejs.js",
