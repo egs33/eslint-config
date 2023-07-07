@@ -15,18 +15,20 @@ $ yarn add -D eslint @egs33/eslint-config
 ## Usage
 ### for node.js
 ```javascript
-module.exports = {
-  root: true,
-  extends: '@egs33',
-};
+import node from '@egs33/eslint-config/nodejs.js';
+
+export default [
+  ...node,
+];
 ```
 
 ### for browser
 ```javascript
-module.exports = {
-  root: true,
-  extends: '@egs33/eslint-config/browser',
-};
+import browser from '@egs33/eslint-config/browser.js';
+
+export default [
+  ...browser,
+];
 ```
 
 ### for browser and Vue.js SFC
@@ -35,11 +37,12 @@ $ yarn add -D vue-eslint-parser eslint-plugin-vue
 ```
 
 ```javascript
-module.exports = {
-  root: true,
-  extends: '@egs33/eslint-config/vue3',
-  parser: 'vue-eslint-parser',
-};
+import vue3 from '@egs33/eslint-config/vue3.js';
+import { applyConfig } from '@egs33/eslint-config/util.js';
+
+export default [
+  ...applyConfig({ files: ['**/*.vue'] }, vue3),
+];
 ```
 ### for node.js (typescript)
 ```bash
@@ -47,17 +50,10 @@ $ yarn add -D @typescript-eslint/eslint-plugin
 ```
 
 ```javascript
-module.exports = {
-  root: true,
-  extends: '@egs33',
-  overrides: [
-    {
-      files: '*.ts',
-      extends: '@egs33/eslint-config/typescript-node',
-      parserOptions: {
-        project: './tsconfig.json',
-      },
-    },
-  ],
-};
+import tsNode from '@egs33/eslint-config/typescript-node.js';
+import { applyConfig } from '@egs33/eslint-config/util.js';
+
+export default [
+  ...applyConfig({ files: ['**/*.ts'] }, tsNode),
+];
 ```
