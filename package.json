@@ -31,7 +31,6 @@
     "base.js",
     "browser.js",
     "nodejs.js",
-    "vue.js",
     "vue3.js",
     "typescript-base.js",
     "typescript-node.js",
@@ -44,7 +43,7 @@
     "eslint-config"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "nodejs.js",
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "eslint": "^8.44.0",
