@@ -71,7 +71,7 @@
     "url": "https://github.com/egs33/eslint-config"
   },
   "scripts": {
-    "lint": "eslint . -c base.js",
-    "lint:fix": "eslint . -c base.js --fix"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   }
 }
