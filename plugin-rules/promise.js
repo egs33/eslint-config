@@ -1,4 +1,4 @@
-module.exports = {
+export const rules = {
   'promise/always-return': 'off',
   'promise/no-return-wrap': 'error',
   'promise/param-names': 'error',

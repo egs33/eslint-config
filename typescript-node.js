@@ -1,9 +1,12 @@
-module.exports = {
-  extends: [
-    './nodejs',
-    './typescript-base',
-  ],
-  rules: {
-    'n/no-missing-import': 'off',
+import nodejs from './nodejs.js';
+import typescriptBase from './typescript-base.js';
+
+export default [
+  ...nodejs,
+  ...typescriptBase,
+  {
+    rules: {
+      'n/no-missing-import': 'off',
+    },
   },
-};
+];
