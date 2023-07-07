@@ -108,7 +108,9 @@ const config = [
 ];
 
 // default name '.vue' is invalid processer name in flat config
-config.plugins.vue.processors.vue = config.plugins.vue.processors['.vue'];
-config.processor = 'vue/vue';
+const vueConfig = config.find((c) => c?.plugins?.vue);
+if (vueConfig) {
+  vueConfig.plugins.vue.processors.vue = vueConfig.plugins.vue.processors['.vue'];
+}
 
-export default config;
+export default [...config, { processor: 'vue/vue' }];
