@@ -5,13 +5,13 @@ const compat = new FlatCompat();
 
 const a = [
   ...base,
-  ...compat.extends('plugin:@typescript-eslint/recommended'),
-  ...compat.extends('plugin:@typescript-eslint/recommended-requiring-type-checking'),
+  ...compat.extends('plugin:@typescript-eslint/recommended-type-checked'),
+  ...compat.extends('plugin:@typescript-eslint/stylistic-type-checked'),
   ...compat.extends('airbnb-typescript/base'),
   {
     languageOptions: {
       parserOptions: {
-        project: './tsconfig.json',
+        project: true,
       },
     },
     rules: {
