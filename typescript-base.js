@@ -28,6 +28,7 @@ const a = [
       '@typescript-eslint/prefer-nullish-coalescing': 'error',
       '@typescript-eslint/prefer-string-starts-ends-with': 'error',
       '@typescript-eslint/type-annotation-spacing': 'error',
+      '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     },
   },
 ];
