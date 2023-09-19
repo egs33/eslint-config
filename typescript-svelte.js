@@ -1,4 +1,5 @@
 import svelteParser from 'svelte-eslint-parser';
+// eslint-disable-next-line import/no-unresolved
 import tsParser from '@typescript-eslint/parser';
 import typescriptBrowser from './typescript-browser.js';
 
