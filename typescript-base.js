@@ -3,9 +3,9 @@ import base from './base.js';
 
 const compat = new FlatCompat();
 
-const a = [
+const config = [
   ...base,
-  ...compat.extends('plugin:@typescript-eslint/recommended-type-checked'),
+  ...compat.extends('plugin:@typescript-eslint/strict-type-checked'),
   ...compat.extends('plugin:@typescript-eslint/stylistic-type-checked'),
   ...compat.extends('airbnb-typescript/base'),
   {
@@ -33,4 +33,4 @@ const a = [
   },
 ];
 
-export default a;
+export default config;
