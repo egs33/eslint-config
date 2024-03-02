@@ -18,10 +18,8 @@
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
     "eslint": "^8.57.0",
-    "eslint-plugin-vue": "^9.22.0",
     "svelte-eslint-parser": "^0.33.1",
-    "typescript": "^5.3.3",
-    "vue-eslint-parser": "^9.4.2"
+    "typescript": "^5.3.3"
   },
   "engines": {
     "node": ">=16"
@@ -31,7 +29,6 @@
     "base.js",
     "browser.js",
     "nodejs.js",
-    "vue3.js",
     "typescript-base.js",
     "typescript-node.js",
     "typescript-browser.js",
@@ -49,10 +46,8 @@
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
     "eslint": "^8.57.0",
-    "eslint-plugin-vue": "^9.5.0",
     "svelte-eslint-parser": ">=0.33.1",
-    "typescript": "^5.3.3",
-    "vue-eslint-parser": "^9.1.0"
+    "typescript": "^5.3.3"
   },
   "peerDependenciesMeta": {
     "@typescript-eslint/eslint-plugin": {
@@ -61,13 +56,7 @@
     "@typescript-eslint/parser": {
       "optional": true
     },
-    "eslint-plugin-vue": {
-      "optional": true
-    },
     "svelte-eslint-parser": {
-      "optional": true
-    },
-    "vue-eslint-parser": {
       "optional": true
     },
     "typescript": {
