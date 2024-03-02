@@ -31,22 +31,9 @@ export default [
 ];
 ```
 
-### for browser and Vue.js SFC
-```bash
-$ yarn add -D vue-eslint-parser eslint-plugin-vue
-```
-
-```javascript
-import vue3 from '@egs33/eslint-config/vue3.js';
-import { applyConfig } from '@egs33/eslint-config/util.js';
-
-export default [
-  ...applyConfig({ files: ['**/*.vue'] }, vue3),
-];
-```
 ### for node.js (typescript)
 ```bash
-$ yarn add -D @typescript-eslint/eslint-plugin
+$ yarn add -D typescript-eslint
 ```
 
 ```javascript
