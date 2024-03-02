@@ -10,7 +10,7 @@ const config = [
   { plugins: { '@typescript-eslint': tseslint.plugin } },
   ...tseslint.configs.strictTypeChecked.map((c) => ({ ...c, plugins: {} })),
   ...tseslint.configs.stylisticTypeChecked.map((c) => ({ ...c, plugins: {} })),
-  ...compat.extends('airbnb-typescript/base'),
+  ...compat.extends('airbnb-typescript/base').map((c) => ({ ...c, plugins: {} })),
   {
     languageOptions: {
       parserOptions: {
