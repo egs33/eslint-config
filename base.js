@@ -1,6 +1,13 @@
 import { FlatCompat } from '@eslint/eslintrc';
+import importPlugin from 'eslint-plugin-import';
 import promise from 'eslint-plugin-promise';
 import { rules as PromiseRules } from './plugin-rules/promise.js';
+import { bestPractices } from './airbnb/best-practices.js';
+import { errors } from './airbnb/errors.js';
+import { style } from './airbnb/style.js';
+import { variables } from './airbnb/variables.js';
+import { es6 } from './airbnb/es6.js';
+import { imports } from './plugin-rules/imports.js';
 
 const compat = new FlatCompat();
 
@@ -13,7 +20,7 @@ export default [
         ecmaVersion: 2023,
       },
     },
-    plugins: { promise },
+    plugins: { import: importPlugin, promise },
     linterOptions: {
       reportUnusedDisableDirectives: true,
     },
@@ -23,7 +30,6 @@ export default [
       },
     },
   },
-  ...compat.extends('eslint-config-airbnb-base'),
   ...compat.extends('plugin:eslint-plugin-array-func/all'),
   ...compat.extends('plugin:eslint-plugin-regexp/recommended'),
   {
@@ -32,6 +38,12 @@ export default [
       ecmaVersion: 2023,
     },
     rules: {
+      ...bestPractices,
+      ...errors,
+      ...style,
+      ...variables,
+      ...es6,
+      ...imports,
       'no-plusplus': 'off',
       'no-continue': 'off',
       'func-style': 'error',
