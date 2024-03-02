@@ -1,7 +1,7 @@
 {
   "name": "@egs33/eslint-config",
   "description": "eslint config for me",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "author": "egs33",
   "type": "module",
   "dependencies": {
