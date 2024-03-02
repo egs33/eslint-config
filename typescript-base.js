@@ -7,8 +7,9 @@ const compat = new FlatCompat();
 
 const config = [
   ...base,
-  ...tseslint.configs.strictTypeChecked,
-  ...tseslint.configs.stylisticTypeChecked,
+  { '@typescript-eslint': tseslint.plugin },
+  ...tseslint.configs.strictTypeChecked.map(c => ({ ...c, plugins: {} })),
+  ...tseslint.configs.stylisticTypeChecked.map(c => ({ ...c, plugins: {} })),
   ...compat.extends('airbnb-typescript/base'),
   {
     languageOptions: {
