@@ -1,12 +1,13 @@
 import { FlatCompat } from '@eslint/eslintrc';
+import tseslint from 'typescript-eslint';
 import base from './base.js';
 
 const compat = new FlatCompat();
 
 const config = [
   ...base,
-  ...compat.extends('plugin:@typescript-eslint/strict-type-checked'),
-  ...compat.extends('plugin:@typescript-eslint/stylistic-type-checked'),
+  ...tseslint.configs.strictTypeChecked,
+  ...tseslint.configs.stylisticTypeChecked,
   ...compat.extends('airbnb-typescript/base'),
   {
     languageOptions: {

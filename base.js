@@ -8,6 +8,7 @@ import { style } from './airbnb/style.js';
 import { variables } from './airbnb/variables.js';
 import { es6 } from './airbnb/es6.js';
 import { imports } from './plugin-rules/imports.js';
+import array from 'eslint-plugin-array-func';
 
 const compat = new FlatCompat();
 
@@ -30,13 +31,9 @@ export default [
       },
     },
   },
-  ...compat.extends('plugin:eslint-plugin-array-func/all'),
+  array.configs.all,
   ...compat.extends('plugin:eslint-plugin-regexp/recommended'),
   {
-    languageOptions: {
-      // overwrite plugin-array-func
-      ecmaVersion: 2023,
-    },
     rules: {
       ...bestPractices,
       ...errors,
