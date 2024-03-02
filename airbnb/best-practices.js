@@ -17,9 +17,11 @@ export const bestPractices = {
 
   // enforce that class methods use "this"
   // https://eslint.org/docs/rules/class-methods-use-this
-  'class-methods-use-this': ['error', {
-    exceptMethods: [],
-  }],
+  'class-methods-use-this': [
+    'error', {
+      exceptMethods: [],
+    },
+  ],
 
   // require return statements to either always or never specify values
   // https://eslint.org/docs/rules/consistent-return
@@ -91,13 +93,15 @@ export const bestPractices = {
 
   // disallow empty functions, except for standalone funcs/arrows
   // https://eslint.org/docs/rules/no-empty-function
-  'no-empty-function': ['error', {
-    allow: [
-      'arrowFunctions',
-      'functions',
-      'methods',
-    ]
-  }],
+  'no-empty-function': [
+    'error', {
+      allow: [
+        'arrowFunctions',
+        'functions',
+        'methods',
+      ],
+    },
+  ],
 
   // disallow empty destructuring patterns
   // https://eslint.org/docs/rules/no-empty-pattern
@@ -146,12 +150,14 @@ export const bestPractices = {
 
   // disallow implicit type conversions
   // https://eslint.org/docs/rules/no-implicit-coercion
-  'no-implicit-coercion': ['off', {
-    boolean: false,
-    number: true,
-    string: true,
-    allow: [],
-  }],
+  'no-implicit-coercion': [
+    'off', {
+      boolean: false,
+      number: true,
+      string: true,
+      allow: [],
+    },
+  ],
 
   // disallow var and named functions in global scope
   // https://eslint.org/docs/rules/no-implicit-globals
@@ -183,18 +189,22 @@ export const bestPractices = {
 
   // disallow magic numbers
   // https://eslint.org/docs/rules/no-magic-numbers
-  'no-magic-numbers': ['off', {
-    ignore: [],
-    ignoreArrayIndexes: true,
-    enforceConst: true,
-    detectObjects: false,
-  }],
+  'no-magic-numbers': [
+    'off', {
+      ignore: [],
+      ignoreArrayIndexes: true,
+      enforceConst: true,
+      detectObjects: false,
+    },
+  ],
 
   // disallow use of multiple spaces
   // https://eslint.org/docs/rules/no-multi-spaces
-  'no-multi-spaces': ['error', {
-    ignoreEOLComments: false,
-  }],
+  'no-multi-spaces': [
+    'error', {
+      ignoreEOLComments: false,
+    },
+  ],
 
   // disallow use of multiline strings
   // https://eslint.org/docs/rules/no-multi-str
@@ -233,22 +243,24 @@ export const bestPractices = {
   // disallow reassignment of function parameters
   // disallow parameter object manipulation except for specific exclusions
   // rule: https://eslint.org/docs/rules/no-param-reassign.html
-  'no-param-reassign': ['error', {
-    props: true,
-    ignorePropertyModificationsFor: [
-      'acc', // for reduce accumulators
-      'accumulator', // for reduce accumulators
-      'e', // for e.returnvalue
-      'ctx', // for Koa routing
-      'context', // for Koa routing
-      'req', // for Express requests
-      'request', // for Express requests
-      'res', // for Express responses
-      'response', // for Express responses
-      '$scope', // for Angular 1 scopes
-      'staticContext', // for ReactRouter context
-    ]
-  }],
+  'no-param-reassign': [
+    'error', {
+      props: true,
+      ignorePropertyModificationsFor: [
+        'acc', // for reduce accumulators
+        'accumulator', // for reduce accumulators
+        'e', // for e.returnvalue
+        'ctx', // for Koa routing
+        'context', // for Koa routing
+        'req', // for Express requests
+        'request', // for Express requests
+        'res', // for Express responses
+        'response', // for Express responses
+        '$scope', // for Angular 1 scopes
+        'staticContext', // for ReactRouter context
+      ],
+    },
+  ],
 
   // disallow usage of __proto__ property
   // https://eslint.org/docs/rules/no-proto
@@ -260,11 +272,12 @@ export const bestPractices = {
 
   // disallow certain object properties
   // https://eslint.org/docs/rules/no-restricted-properties
-  'no-restricted-properties': ['error', {
-    object: 'arguments',
-    property: 'callee',
-    message: 'arguments.callee is deprecated',
-  }, {
+  'no-restricted-properties': [
+    'error', {
+      object: 'arguments',
+      property: 'callee',
+      message: 'arguments.callee is deprecated',
+    }, {
       object: 'global',
       property: 'isFinite',
       message: 'Please use Number.isFinite instead',
@@ -298,7 +311,8 @@ export const bestPractices = {
       object: 'Math',
       property: 'pow',
       message: 'Use the exponentiation operator (**) instead.',
-    }],
+    },
+  ],
 
   // disallow use of assignment in return statement
   // https://eslint.org/docs/rules/no-return-assign
@@ -314,9 +328,11 @@ export const bestPractices = {
 
   // disallow self assignment
   // https://eslint.org/docs/rules/no-self-assign
-  'no-self-assign': ['error', {
-    props: true,
-  }],
+  'no-self-assign': [
+    'error', {
+      props: true,
+    },
+  ],
 
   // disallow comparisons where both sides are exactly the same
   // https://eslint.org/docs/rules/no-self-compare
@@ -336,11 +352,13 @@ export const bestPractices = {
 
   // disallow usage of expressions in statement position
   // https://eslint.org/docs/rules/no-unused-expressions
-  'no-unused-expressions': ['error', {
-    allowShortCircuit: false,
-    allowTernary: false,
-    allowTaggedTemplates: false,
-  }],
+  'no-unused-expressions': [
+    'error', {
+      allowShortCircuit: false,
+      allowTernary: false,
+      allowTaggedTemplates: false,
+    },
+  ],
 
   // disallow unused labels
   // https://eslint.org/docs/rules/no-unused-labels
@@ -392,9 +410,11 @@ export const bestPractices = {
   'prefer-object-has-own': 'off',
 
   // https://eslint.org/docs/rules/prefer-regex-literals
-  'prefer-regex-literals': ['error', {
-    disallowRedundantWrapping: true,
-  }],
+  'prefer-regex-literals': [
+    'error', {
+      disallowRedundantWrapping: true,
+    },
+  ],
 
   // require use of the second argument for parseInt()
   // https://eslint.org/docs/rules/radix
@@ -418,5 +438,5 @@ export const bestPractices = {
 
   // require or disallow Yoda conditions
   // https://eslint.org/docs/rules/yoda
-  yoda: 'error'
+  yoda: 'error',
 };

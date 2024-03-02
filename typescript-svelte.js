@@ -46,10 +46,12 @@ export default [
       'svelte/no-at-html-tags': 'error',
       'svelte/no-target-blank': 'off', // use noreferrer only is ok
 
-      'svelte/block-lang': ['error', {
-        script: ['ts', null],
-        style: ['scss', null],
-      }],
+      'svelte/block-lang': [
+        'error', {
+          script: ['ts', null],
+          style: ['scss', null],
+        },
+      ],
       'svelte/button-has-type': 'error',
       'svelte/no-at-debug-tags': 'warn',
       'svelte/no-immutable-reactive-statements': 'error',

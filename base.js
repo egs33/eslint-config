@@ -1,6 +1,7 @@
 import { FlatCompat } from '@eslint/eslintrc';
 import importPlugin from 'eslint-plugin-import';
 import promise from 'eslint-plugin-promise';
+import array from 'eslint-plugin-array-func';
 import { rules as PromiseRules } from './plugin-rules/promise.js';
 import { bestPractices } from './airbnb/best-practices.js';
 import { errors } from './airbnb/errors.js';
@@ -8,7 +9,6 @@ import { style } from './airbnb/style.js';
 import { variables } from './airbnb/variables.js';
 import { es6 } from './airbnb/es6.js';
 import { imports } from './plugin-rules/imports.js';
-import array from 'eslint-plugin-array-func';
 
 const compat = new FlatCompat();
 

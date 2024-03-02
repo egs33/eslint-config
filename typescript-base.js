@@ -1,4 +1,5 @@
 import { FlatCompat } from '@eslint/eslintrc';
+// eslint-disable-next-line import/no-unresolved
 import tseslint from 'typescript-eslint';
 import base from './base.js';
 

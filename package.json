@@ -6,6 +6,8 @@
   "type": "module",
   "dependencies": {
     "@eslint/eslintrc": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-plugin-array-func": "^5.0.1",
     "eslint-plugin-import": "^2.29.1",
@@ -32,7 +34,8 @@
     "typescript-node.js",
     "typescript-browser.js",
     "typescript-svelte.js",
-    "plugin-rules"
+    "plugin-rules",
+    "airbnb"
   ],
   "homepage": "https://github.com/egs33/eslint-config",
   "keywords": [
