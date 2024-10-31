@@ -11,7 +11,7 @@ export const es6 = {
 
   // require parens in arrow function arguments
   // https://eslint.org/docs/rules/arrow-parens
-  'arrow-parens': ['error', 'always'],
+  '@stylistic/arrow-parens': ['error', 'always'],
 
   // require space before/after arrow function's arrow
   // https://eslint.org/docs/rules/arrow-spacing

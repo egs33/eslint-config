@@ -48,7 +48,7 @@ export const bestPractices = {
 
   // enforces consistent newlines before or after dots
   // https://eslint.org/docs/rules/dot-location
-  'dot-location': ['error', 'property'],
+  '@stylistic/dot-location': ['error', 'property'],
 
   // require the use of === and !==
   // https://eslint.org/docs/rules/eqeqeq
@@ -138,7 +138,7 @@ export const bestPractices = {
 
   // disallow the use of leading or trailing decimal points in numeric literals
   // https://eslint.org/docs/rules/no-floating-decimal
-  'no-floating-decimal': 'error',
+  '@stylistic/no-floating-decimal': 'error',
 
   // disallow reassignments of native objects or read-only globals
   // https://eslint.org/docs/rules/no-global-assign
@@ -200,7 +200,7 @@ export const bestPractices = {
 
   // disallow use of multiple spaces
   // https://eslint.org/docs/rules/no-multi-spaces
-  'no-multi-spaces': [
+  '@stylistic/no-multi-spaces': [
     'error', {
       ignoreEOLComments: false,
     },
@@ -434,7 +434,7 @@ export const bestPractices = {
 
   // require immediate function invocation to be wrapped in parentheses
   // https://eslint.org/docs/rules/wrap-iife.html
-  'wrap-iife': ['error', 'outside', { functionPrototypeMethods: false }],
+  '@stylistic/wrap-iife': ['error', 'outside', { functionPrototypeMethods: false }],
 
   // require or disallow Yoda conditions
   // https://eslint.org/docs/rules/yoda
