@@ -13,7 +13,6 @@ export const bestPractices = {
   'default-case-last': 'error',
   'default-param-last': 'error',
   'dot-notation': ['error', { allowKeywords: true }],
-  '@stylistic/dot-location': ['error', 'property'],
   eqeqeq: ['error', 'always', { null: 'ignore' }],
   'grouped-accessor-pairs': 'error',
   'guard-for-in': 'error',
@@ -37,7 +36,6 @@ export const bestPractices = {
   'no-extend-native': 'error',
   'no-extra-bind': 'error',
   'no-extra-label': 'error',
-  '@stylistic/no-floating-decimal': 'error',
   'no-global-assign': ['error', { exceptions: [] }],
   'no-native-reassign': 'off',
   'no-implicit-coercion': [
@@ -61,11 +59,6 @@ export const bestPractices = {
       ignoreArrayIndexes: true,
       enforceConst: true,
       detectObjects: false,
-    },
-  ],
-  '@stylistic/no-multi-spaces': [
-    'error', {
-      ignoreEOLComments: false,
     },
   ],
   'no-multi-str': 'error',
@@ -169,6 +162,5 @@ export const bestPractices = {
   'require-await': 'error',
   'require-unicode-regexp': 'error',
   'vars-on-top': 'error',
-  '@stylistic/wrap-iife': ['error', 'outside', { functionPrototypeMethods: false }],
   yoda: 'error',
 };

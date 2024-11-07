@@ -5,6 +5,7 @@ import stylistic from '@stylistic/eslint-plugin';
 import eslintJs from '@eslint/js';
 import { configs as regexpConfig } from 'eslint-plugin-regexp';
 import { rules as PromiseRules } from './plugin-rules/promise.js';
+import { rules as StyleRules } from './plugin-rules/stylistic.js';
 import { bestPractices } from './airbnb/best-practices.js';
 import { errors } from './airbnb/errors.js';
 import { style } from './airbnb/style.js';
@@ -50,10 +51,9 @@ export default [
       'import/prefer-default-export': 'off',
       'import/no-default-export': 'error',
       'max-lines': ['error', { max: 500, skipComments: true }],
-      // https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/style.js#L6
-      '@stylistic/array-bracket-newline': 'error',
       'array-func/prefer-array-from': 'off',
       ...PromiseRules,
+      ...StyleRules,
     },
   },
 ];

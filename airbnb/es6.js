@@ -4,7 +4,6 @@ export const es6 = {
       requireReturnForObjectLiteral: false,
     },
   ],
-  '@stylistic/arrow-parens': ['error', 'always'],
   'arrow-spacing': ['error', { before: true, after: true }],
   'generator-star-spacing': ['error', { before: false, after: true }],
   'no-confusing-arrow': [
