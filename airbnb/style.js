@@ -1,9 +1,4 @@
 export const style = {
-  // enforce line breaks after opening and before closing array brackets
-  // https://eslint.org/docs/rules/array-bracket-newline
-  // TODO: enable? semver-major
-  '@stylistic/array-bracket-newline': ['off', 'consistent'], // object option alternative: { multiline: true, minItems: 3 }
-
   // enforce line breaks between array elements
   // https://eslint.org/docs/rules/array-element-newline
   // TODO: enable? semver-major
@@ -101,11 +96,6 @@ export const style = {
   // require function expressions to have a name
   // https://eslint.org/docs/rules/func-names
   'func-names': 'warn',
-
-  // enforces use of function declarations or expressions
-  // https://eslint.org/docs/rules/func-style
-  // TODO: enable
-  'func-style': ['off', 'expression'],
 
   // require line breaks inside function parentheses if there are line breaks between parameters
   // https://eslint.org/docs/rules/function-paren-newline
@@ -230,16 +220,6 @@ export const style = {
     },
   ],
 
-  // specify the max number of lines in a file
-  // https://eslint.org/docs/rules/max-lines
-  'max-lines': [
-    'off', {
-      max: 300,
-      skipBlankLines: true,
-      skipComments: true,
-    },
-  ],
-
   // enforce a maximum function length
   // https://eslint.org/docs/rules/max-lines-per-function
   'max-lines-per-function': [
@@ -305,10 +285,6 @@ export const style = {
   // https://eslint.org/docs/rules/no-bitwise
   'no-bitwise': 'error',
 
-  // disallow use of the continue statement
-  // https://eslint.org/docs/rules/no-continue
-  'no-continue': 'error',
-
   // disallow comments inline after code
   'no-inline-comments': 'off',
 
@@ -357,32 +333,6 @@ export const style = {
 
   // disallow use of the Object constructor
   'no-new-object': 'error',
-
-  // disallow use of unary operators, ++ and --
-  // https://eslint.org/docs/rules/no-plusplus
-  'no-plusplus': 'error',
-
-  // disallow certain syntax forms
-  // https://eslint.org/docs/rules/no-restricted-syntax
-  'no-restricted-syntax': [
-    'error',
-    {
-      selector: 'ForInStatement',
-      message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
-    },
-    {
-      selector: 'ForOfStatement',
-      message: 'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.',
-    },
-    {
-      selector: 'LabeledStatement',
-      message: 'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
-    },
-    {
-      selector: 'WithStatement',
-      message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
-    },
-  ],
 
   // disallow space between function identifier and application
   // deprecated in favor of func-call-spacing

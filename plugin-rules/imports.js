@@ -124,10 +124,6 @@ export const imports = {
   // https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md
   'import/newline-after-import': 'error',
 
-  // Require modules with a single export to use a default export
-  // https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
-  'import/prefer-default-export': 'error',
-
   // Restrict which files can be imported in a given folder
   // https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/no-restricted-paths.md
   'import/no-restricted-paths': 'off',
@@ -196,10 +192,6 @@ export const imports = {
   // https://github.com/import-js/eslint-plugin-import/blob/44a038c06487964394b1e15b64f3bd34e5d40cde/docs/rules/group-exports.md
   'import/group-exports': 'off',
 
-  // forbid default exports. this is a terrible rule, do not use it.
-  // https://github.com/import-js/eslint-plugin-import/blob/44a038c06487964394b1e15b64f3bd34e5d40cde/docs/rules/no-default-export.md
-  'import/no-default-export': 'off',
-
   // Prohibit named exports. this is a terrible rule, do not use it.
   // https://github.com/import-js/eslint-plugin-import/blob/1ec80fa35fa1819e2d35a70e68fb6a149fb57c5e/docs/rules/no-named-export.md
   'import/no-named-export': 'off',
@@ -210,7 +202,7 @@ export const imports = {
 
   // Forbid cyclical dependencies between modules
   // https://github.com/import-js/eslint-plugin-import/blob/d81f48a2506182738409805f5272eff4d77c9348/docs/rules/no-cycle.md
-  'import/no-cycle': ['error', { maxDepth: '∞' }],
+  'import/no-cycle': ['error', { maxDepth: 20 }],
 
   // Ensures that there are no useless path segments
   // https://github.com/import-js/eslint-plugin-import/blob/ebafcbf59ec9f653b2ac2a0156ca3bcba0a7cf57/docs/rules/no-useless-path-segments.md

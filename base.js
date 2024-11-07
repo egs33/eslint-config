@@ -2,6 +2,7 @@ import importPlugin from 'eslint-plugin-import';
 import promise from 'eslint-plugin-promise';
 import array from 'eslint-plugin-array-func';
 import stylistic from '@stylistic/eslint-plugin';
+import eslintJs from '@eslint/js';
 import { configs as regexpConfig } from 'eslint-plugin-regexp';
 import { rules as PromiseRules } from './plugin-rules/promise.js';
 import { bestPractices } from './airbnb/best-practices.js';
@@ -31,6 +32,7 @@ export default [
     },
   },
   stylistic.configs.customize(),
+  eslintJs.configs.recommended,
   array.configs.all,
   regexpConfig['flat/recommended'],
   {

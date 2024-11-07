@@ -1,10 +1,4 @@
 export const bestPractices = {
-  // enforces getter/setter pairs in objects
-  // https://eslint.org/docs/rules/accessor-pairs
-  'accessor-pairs': 'off',
-
-  // enforces return statements in callbacks of array's methods
-  // https://eslint.org/docs/rules/array-callback-return
   'array-callback-return': ['error', { allowImplicit: true }],
 
   // treat var statements as if they were block scoped
@@ -75,14 +69,6 @@ export const bestPractices = {
   // https://eslint.org/docs/rules/no-caller
   'no-caller': 'error',
 
-  // disallow lexical declarations in case/default clauses
-  // https://eslint.org/docs/rules/no-case-declarations
-  'no-case-declarations': 'error',
-
-  // Disallow returning value in constructor
-  // https://eslint.org/docs/rules/no-constructor-return
-  'no-constructor-return': 'error',
-
   // disallow division operators explicitly at beginning of regular expression
   // https://eslint.org/docs/rules/no-div-regex
   'no-div-regex': 'off',
@@ -102,10 +88,6 @@ export const bestPractices = {
       ],
     },
   ],
-
-  // disallow empty destructuring patterns
-  // https://eslint.org/docs/rules/no-empty-pattern
-  'no-empty-pattern': 'error',
 
   // Disallow empty static blocks
   // https://eslint.org/docs/latest/rules/no-empty-static-block
@@ -131,10 +113,6 @@ export const bestPractices = {
   // disallow Unnecessary Labels
   // https://eslint.org/docs/rules/no-extra-label
   'no-extra-label': 'error',
-
-  // disallow fallthrough of case statements
-  // https://eslint.org/docs/rules/no-fallthrough
-  'no-fallthrough': 'error',
 
   // disallow the use of leading or trailing decimal points in numeric literals
   // https://eslint.org/docs/rules/no-floating-decimal
@@ -222,18 +200,10 @@ export const bestPractices = {
   // https://eslint.org/docs/rules/no-new-wrappers
   'no-new-wrappers': 'error',
 
-  // Disallow \8 and \9 escape sequences in string literals
-  // https://eslint.org/docs/rules/no-nonoctal-decimal-escape
-  'no-nonoctal-decimal-escape': 'error',
-
   // Disallow calls to the Object constructor without an argument
   // https://eslint.org/docs/latest/rules/no-object-constructor
   // TODO: enable, semver-major
   'no-object-constructor': 'off',
-
-  // disallow use of (old style) octal literals
-  // https://eslint.org/docs/rules/no-octal
-  'no-octal': 'error',
 
   // disallow use of octal escape sequences in string literals, such as
   // var foo = 'Copyright \251';
@@ -265,10 +235,6 @@ export const bestPractices = {
   // disallow usage of __proto__ property
   // https://eslint.org/docs/rules/no-proto
   'no-proto': 'error',
-
-  // disallow declaring the same variable more than once
-  // https://eslint.org/docs/rules/no-redeclare
-  'no-redeclare': 'error',
 
   // disallow certain object properties
   // https://eslint.org/docs/rules/no-restricted-properties
@@ -360,25 +326,13 @@ export const bestPractices = {
     },
   ],
 
-  // disallow unused labels
-  // https://eslint.org/docs/rules/no-unused-labels
-  'no-unused-labels': 'error',
-
   // disallow unnecessary .call() and .apply()
   // https://eslint.org/docs/rules/no-useless-call
   'no-useless-call': 'off',
 
-  // Disallow unnecessary catch clauses
-  // https://eslint.org/docs/rules/no-useless-catch
-  'no-useless-catch': 'error',
-
   // disallow useless string concatenation
   // https://eslint.org/docs/rules/no-useless-concat
   'no-useless-concat': 'error',
-
-  // disallow unnecessary string escaping
-  // https://eslint.org/docs/rules/no-useless-escape
-  'no-useless-escape': 'error',
 
   // disallow redundant return; keywords
   // https://eslint.org/docs/rules/no-useless-return
@@ -391,10 +345,6 @@ export const bestPractices = {
   // disallow usage of configurable warning terms in comments: e.g. todo
   // https://eslint.org/docs/rules/no-warning-comments
   'no-warning-comments': ['off', { terms: ['todo', 'fixme', 'xxx'], location: 'start' }],
-
-  // disallow use of the with statement
-  // https://eslint.org/docs/rules/no-with
-  'no-with': 'error',
 
   // require using Error objects as Promise rejection reasons
   // https://eslint.org/docs/rules/prefer-promise-reject-errors
