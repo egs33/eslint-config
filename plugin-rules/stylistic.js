@@ -183,5 +183,5 @@ export const rules = {
   '@stylistic/template-tag-spacing': ['error', 'never'],
   '@stylistic/wrap-regex': 'off',
   '@stylistic/array-bracket-newline': 'error',
-  '@stylistic/no-extra-parens': ['error', 'functions', { "enforceForArrowConditionals": false }],
+  '@stylistic/no-extra-parens': ['error', 'all', { nestedBinaryExpressions: false, enforceForArrowConditionals: false }],
 };
