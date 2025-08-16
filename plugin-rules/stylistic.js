@@ -7,7 +7,7 @@ export const rules = {
   '@stylistic/wrap-iife': ['error', 'outside', { functionPrototypeMethods: false }],
   '@stylistic/arrow-parens': ['error', 'always'],
   '@stylistic/function-call-argument-newline': ['error', 'consistent'],
-  '@stylistic/func-call-spacing': ['error', 'never'],
+  '@stylistic/function-call-spacing': ['error', 'never'],
   '@stylistic/function-paren-newline': ['error', 'multiline-arguments'],
   '@stylistic/implicit-arrow-linebreak': ['error', 'beside'],
   '@stylistic/indent': [
