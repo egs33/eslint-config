@@ -9,7 +9,7 @@ const config = [
   {
     languageOptions: {
       parserOptions: {
-        project: true,
+        projectService: true,
       },
     },
     rules: {
