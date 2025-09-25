@@ -24,6 +24,9 @@ jobs:
 
   release-npm:
     runs-on: ubuntu-22.04
+    permissions:
+      id-token: write  # Required for OIDC
+      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -36,5 +39,3 @@ jobs:
 
       - name: publish
         run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
