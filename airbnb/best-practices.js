@@ -37,7 +37,6 @@ export const bestPractices = {
   'no-extra-bind': 'error',
   'no-extra-label': 'error',
   'no-global-assign': ['error', { exceptions: [] }],
-  'no-native-reassign': 'off',
   'no-implicit-coercion': [
     'off', {
       boolean: false,
@@ -128,7 +127,6 @@ export const bestPractices = {
     },
   ],
   'no-return-assign': ['error', 'always'],
-  'no-return-await': 'error',
   'no-script-url': 'error',
   'no-self-assign': [
     'error', {

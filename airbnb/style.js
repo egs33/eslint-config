@@ -23,7 +23,6 @@ export const style = {
   'no-lonely-if': 'error',
   'no-multi-assign': ['error'],
   'no-nested-ternary': 'error',
-  'no-new-object': 'error',
   '@stylistic/no-spaced-func': 'off',
   'no-underscore-dangle': [
     'error', {

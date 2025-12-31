@@ -63,7 +63,6 @@ const config = defineConfig([
       '@typescript-eslint/no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
       'require-await': 'off',
       '@typescript-eslint/require-await': 'off',
-      'no-return-await': 'off',
       '@typescript-eslint/return-await': ['error', 'in-try-catch'],
 
       '@typescript-eslint/method-signature-style': ['error', 'property'],

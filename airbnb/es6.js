@@ -12,7 +12,6 @@ export const es6 = {
     },
   ],
   'no-duplicate-imports': 'off',
-  'no-new-symbol': 'error',
   'no-restricted-exports': [
     'error', {
       restrictedNamedExports: [
