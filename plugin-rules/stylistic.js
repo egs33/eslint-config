@@ -132,5 +132,5 @@ export const rules = {
   '@stylistic/switch-colon-spacing': ['error', { after: true, before: false }],
   '@stylistic/wrap-regex': 'off',
   '@stylistic/array-bracket-newline': 'error',
-  '@stylistic/no-extra-parens': ['error', 'all', { nestedBinaryExpressions: false, enforceForArrowConditionals: false }],
+  '@stylistic/no-extra-parens': ['error', 'all', { nestedBinaryExpressions: false, ignoredNodes: ['ArrowFunctionExpression[body.type=ConditionalExpression]'] }],
 };
