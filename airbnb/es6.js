@@ -4,9 +4,9 @@ export const es6 = {
       requireReturnForObjectLiteral: false,
     },
   ],
-  'arrow-spacing': ['error', { before: true, after: true }],
-  'generator-star-spacing': ['error', { before: false, after: true }],
-  'no-confusing-arrow': [
+  '@stylistic/arrow-spacing': ['error', { before: true, after: true }],
+  '@stylistic/generator-star-spacing': ['error', { before: false, after: true }],
+  '@stylistic/no-confusing-arrow': [
     'error', {
       allowParens: true,
     },
@@ -73,8 +73,8 @@ export const es6 = {
   'prefer-rest-params': 'error',
   'prefer-spread': 'error',
   'prefer-template': 'error',
-  'rest-spread-spacing': ['error', 'never'],
+  '@stylistic/rest-spread-spacing': ['error', 'never'],
   'symbol-description': 'error',
-  'template-curly-spacing': 'error',
-  'yield-star-spacing': ['error', 'after'],
+  '@stylistic/template-curly-spacing': 'error',
+  '@stylistic/yield-star-spacing': ['error', 'after'],
 };

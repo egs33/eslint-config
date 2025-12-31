@@ -1,12 +1,7 @@
 export const style = {
   camelcase: ['error', { properties: 'never', ignoreDestructuring: false }],
   'func-names': 'warn',
-  'lines-around-directive': [
-    'error', {
-      before: 'always',
-      after: 'always',
-    },
-  ],
+  '@stylistic/padding-line-between-statements': ['error', { blankLine: 'always', prev: 'directive', next: '*' }],
   'max-lines-per-function': [
     'off', {
       max: 50,
@@ -29,7 +24,7 @@ export const style = {
   'no-multi-assign': ['error'],
   'no-nested-ternary': 'error',
   'no-new-object': 'error',
-  'no-spaced-func': 'off',
+  '@stylistic/no-spaced-func': 'off',
   'no-underscore-dangle': [
     'error', {
       allow: [],
