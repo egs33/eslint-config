@@ -4,6 +4,7 @@ import array from 'eslint-plugin-array-func';
 import stylistic from '@stylistic/eslint-plugin';
 import eslintJs from '@eslint/js';
 import { configs as regexpConfig } from 'eslint-plugin-regexp';
+import { defineConfig } from 'eslint/config';
 import { rules as PromiseRules } from './plugin-rules/promise.js';
 import { rules as StyleRules } from './plugin-rules/stylistic.js';
 import { bestPractices } from './airbnb/best-practices.js';
@@ -13,7 +14,7 @@ import { variables } from './airbnb/variables.js';
 import { es6 } from './airbnb/es6.js';
 import { imports } from './plugin-rules/imports.js';
 
-export default [
+export default defineConfig([
   {
     languageOptions: {
       ecmaVersion: 2023,
@@ -70,4 +71,4 @@ export default [
       ...StyleRules,
     },
   },
-];
+]);

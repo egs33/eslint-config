@@ -1,10 +1,11 @@
 import svelteParser from 'svelte-eslint-parser';
-// eslint-disable-next-line import/no-unresolved
+
 import tseslint from 'typescript-eslint';
 import svelte from 'eslint-plugin-svelte';
+import { defineConfig } from 'eslint/config';
 import typescriptBrowser from './typescript-browser.js';
 
-export default [
+export default defineConfig([
   ...typescriptBrowser,
   ...svelte.configs.recommended,
   {
@@ -92,4 +93,4 @@ export default [
       'svelte/system': 'error',
     },
   },
-];
+]);

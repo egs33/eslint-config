@@ -1,8 +1,9 @@
 import node from 'eslint-plugin-n/configs/recommended-module.js';
 import globals from 'globals';
+import { defineConfig } from 'eslint/config';
 import base from './base.js';
 
-export default [
+export default defineConfig([
   ...base,
   node,
   {
@@ -20,4 +21,4 @@ export default [
       'import/extensions': ['error', 'always', { ignorePackages: true }],
     },
   },
-];
+]);

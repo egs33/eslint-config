@@ -1,9 +1,9 @@
-// eslint-disable-next-line import/no-unresolved
 import tseslint from 'typescript-eslint';
 import importPlugin from 'eslint-plugin-import';
+import { defineConfig } from 'eslint/config';
 import base from './base.js';
 
-const config = [
+const config = defineConfig([
   ...base,
   ...tseslint.configs.strictTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
@@ -82,6 +82,6 @@ const config = [
       '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     },
   },
-];
+]);
 
 export default config;

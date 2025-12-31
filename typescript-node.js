@@ -1,7 +1,8 @@
+import { defineConfig } from 'eslint/config';
 import nodejs from './nodejs.js';
 import typescriptBase from './typescript-base.js';
 
-export default [
+export default defineConfig([
   ...nodejs,
   ...typescriptBase,
   {
@@ -9,4 +10,4 @@ export default [
       'n/no-missing-import': 'off',
     },
   },
-];
+]);
