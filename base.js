@@ -27,12 +27,12 @@ export default [
       reportUnusedDisableDirectives: true,
     },
     settings: {
+      'import/resolver': 'typescript', // Supports "exports" in package.json
       'import/parsers': {
         espree: ['.js', '.cjs', '.mjs', '.jsx'],
       },
     },
   },
-  importPlugin.flatConfigs.recommended,
   stylistic.configs.customize({
     arrowParens: false,
     blockSpacing: true,
@@ -47,6 +47,7 @@ export default [
     semi: true,
   }),
   eslintJs.configs.recommended,
+  importPlugin.flatConfigs.recommended,
   array.configs.all,
   regexpConfig['flat/recommended'],
   {
