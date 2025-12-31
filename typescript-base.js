@@ -1,11 +1,13 @@
 // eslint-disable-next-line import/no-unresolved
 import tseslint from 'typescript-eslint';
+import importPlugin from 'eslint-plugin-import';
 import base from './base.js';
 
 const config = [
   ...base,
   ...tseslint.configs.strictTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
+  importPlugin.flatConfigs.typescript,
   {
     languageOptions: {
       parserOptions: {

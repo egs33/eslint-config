@@ -22,7 +22,7 @@ export default [
         ecmaVersion: 2023,
       },
     },
-    plugins: { import: importPlugin, promise },
+    plugins: { promise },
     linterOptions: {
       reportUnusedDisableDirectives: true,
     },
@@ -32,6 +32,7 @@ export default [
       },
     },
   },
+  importPlugin.flatConfigs.recommended,
   stylistic.configs.customize({
     arrowParens: false,
     blockSpacing: true,

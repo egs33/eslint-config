@@ -12,15 +12,8 @@ export default [
       parser: svelteParser,
       parserOptions: {
         parser: tseslint.parser,
-        project: './tsconfig.eslint.json',
+        projectService: true,
         extraFileExtensions: ['.svelte'],
-      },
-    },
-    settings: {
-      'import/resolver': {
-        typescript: {
-          project: './tsconfig.eslint.json',
-        },
       },
     },
     rules: {
