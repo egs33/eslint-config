@@ -46,11 +46,15 @@
   "main": "nodejs.js",
   "peerDependencies": {
     "eslint": "^9.13.0",
+    "eslint-plugin-svelte": "^3.13.1",
     "svelte-eslint-parser": ">=0.43.0",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.12.2"
   },
   "peerDependenciesMeta": {
+    "eslint-plugin-svelte": {
+      "optional": true
+    },
     "typescript-eslint": {
       "optional": true
     },
