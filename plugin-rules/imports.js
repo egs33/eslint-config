@@ -91,11 +91,6 @@ export const imports = {
   // https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/first.md
   'import/first': 'error',
 
-  // disallow non-import statements appearing before import statements
-  // https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/imports-first.md
-  // deprecated: use `import/first`
-  'import/imports-first': 'off',
-
   // disallow duplicate imports
   // https://github.com/import-js/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
   'import/no-duplicates': 'error',
