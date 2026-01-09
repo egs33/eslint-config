@@ -4,6 +4,7 @@ import array from 'eslint-plugin-array-func';
 import stylistic from '@stylistic/eslint-plugin';
 import eslintJs from '@eslint/js';
 import { configs as regexpConfig } from 'eslint-plugin-regexp';
+import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 import { defineConfig } from 'eslint/config';
 import { rules as PromiseRules } from './plugin-rules/promise.js';
 import { rules as StyleRules } from './plugin-rules/stylistic.js';
@@ -13,6 +14,7 @@ import { style } from './airbnb/style.js';
 import { variables } from './airbnb/variables.js';
 import { es6 } from './airbnb/es6.js';
 import { imports } from './plugin-rules/imports.js';
+import { rules as UnicornRules } from './plugin-rules/unicorn.js';
 
 export default defineConfig([
   {
@@ -51,6 +53,7 @@ export default defineConfig([
   importPlugin.flatConfigs.recommended,
   array.configs.all,
   regexpConfig['flat/recommended'],
+  eslintPluginUnicorn.configs.recommended,
   {
     rules: {
       ...bestPractices,
@@ -69,6 +72,7 @@ export default defineConfig([
       'array-func/prefer-array-from': 'off',
       ...PromiseRules,
       ...StyleRules,
+      ...UnicornRules,
     },
   },
 ]);

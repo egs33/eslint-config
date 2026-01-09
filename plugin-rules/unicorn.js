@@ -1,0 +1,16 @@
+export const rules = {
+  'unicorn/better-regex': 'error',
+  'unicorn/custom-error-definition': 'error',
+  'unicorn/expiring-todo-comments': 'off',
+  'unicorn/import-style': 'off',
+  'unicorn/no-array-callback-reference': 'off',
+  'unicorn/no-array-reduce': 'off',
+  'unicorn/no-await-expression-member': 'off',
+  'no-nested-ternary': 'off',
+  'unicorn/no-nested-ternary': 'error',
+  'unicorn/no-null': 'off',
+  'unicorn/no-typeof-undefined': 'off',
+  'unicorn/prefer-import-meta-properties': 'error',
+  'unicorn/prefer-ternary': 'off',
+  'unicorn/prevent-abbreviations': 'off',
+};
